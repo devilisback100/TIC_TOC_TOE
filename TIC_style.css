@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Roboto&family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Inconsolata&family=Roboto&family=Roboto+Slab&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    background-color:rgb(249, 232, 226)
+}
+
+.game_container{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    margin-left: 5vw;
+  
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: (3,10vw);
+    padding: 1vw;
+    cursor: pointer;
+}
+.text{
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    background-color: inherit;
+   
+}
+
+.box{
+    display: flex; 
+    font-size: 8vw;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid grey;
+    height: 10vw;
+    
+}
+.box:hover{
+background-color: rgba(230, 209, 230, 0.396);
+}
+.br-0{
+    border-right: none; 
+} 
+.bl-0{
+    border-left: none ;
+} 
+.bt-0{
+    border-top:none; 
+} 
+.bb-0{
+    border-bottom: none; 
+} 
+.Box{
+    display: grid;
+}
+
+#reset{
+    font-family: 'Fira Sans', sans-serif;
+    position: absolute;
+    margin-left: 70vw;
+    padding: .5vw;
+    font-size: 2vw;
+    border-radius: 10%;
+    border-top-color: red;
+    border-left-color: blue;
+    border-bottom-color: rgb(15, 233, 15);
+    border-right-color: blueviolet;
+    cursor: pointer;
+}
